@@ -1,77 +1,27 @@
-### Dependencies
+# Scrimba NodeJS Course
 
-node_modules/
+Example server - Wild Horizons API. Query the server to get information on the Earth's most interesting places. Normally this would be connected to a database, but to keep things simple is uses a json file, pretending to be a db.
 
-### Logs
+- Nodejs
+- Javascript
+- Path Params
+- Query params
+- So much quicker than a C based CGI!
 
-# Log files generated during development or production.
+## To run
 
-_.log
-npm-debug.log_
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log\*
+```bash
+npm i
+npm start (or node server.js)
+```
 
-### Environment Variables
+## Usage
 
-# Ignore all local environment files. These contain secrets
+In a browser (or curl/wget) use:
 
-# and system-specific settings.
-
-.env\*
-
-# But do NOT ignore the example file, which is a template for others.
-
-# Not used in this project. Uncomment if needed
-
-# !\*.env.example
-
-# !\*.env.sample
-
-### Build & Output
-
-# Compiled/transpiled output folders (e.g., from TypeScript, Babel).
-
-dist/
-build/
-out/
-.out/
-coverage/
-
-### Operating System
-
-# macOS system files
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Windows system files
-
-Thumbs.db
-ehthumbs.db
-ehthumbs_vista.db
-Desktop.ini
-
-### IDE & Editor
-
-# VSCode
-
-.vscode/
-
-# JetBrains (WebStorm, IntelliJ, etc.)
-
-.idea/
-
-# Sublime Text
-
-_.sublime-project
-_.sublime-workspace
-
-### Misc
-
-# Temporary files or old package lock files you might not use.
-
-_.tmp
-_.bak
-\*.swp
+http://localhost:8000/api
+http://localhost:8000/api/country/india
+http://localhost:8000/api?continent=Oceania
+http://localhost:8000/api?continent=Asia&country=Turkmenistan
+http://localhost:8000/api?continent=Asia&country=Turkmenistan&is_open_to_public=true
+http://localhost:8000/api?continent=Asia&is_open_to_public=false
